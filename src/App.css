@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 600px; 
+}
+
+.homepage {
+  padding: 20px;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.task-link {
+  padding: 12px 25px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.task-link:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}

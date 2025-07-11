@@ -1,0 +1,44 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.task4-grid {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  grid-auto-rows: 60px;
+  grid-auto-columns: 60px;
+  background-image: 
+    linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+    linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none; 
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+}
+
+.blink {
+  background-color: rgba(128, 0, 255, 0.8);
+  animation: blink 3s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
